@@ -31,6 +31,7 @@
         android:layout_height="wrap_content"
         android:text="@string/next"
         android:layout_below="@id/main_fragment"
+        android:id="@+id/next_button"
         />
 
 </RelativeLayout>
