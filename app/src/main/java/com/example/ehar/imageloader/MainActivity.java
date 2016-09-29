@@ -38,6 +38,18 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+
+        Button network = (Button) findViewById(R.id.network_button);
+
+        network.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(
+                        MainActivity.this,
+                        NetworkImagesActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     /**

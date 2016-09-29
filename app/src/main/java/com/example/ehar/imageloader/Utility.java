@@ -90,8 +90,14 @@ public class Utility {
             Environment.getExternalStoragePublicDirectory(
                     Environment.DIRECTORY_PICTURES);
 
-        // The above two line are almost correct
+        ArrayList<String> pics = new ArrayList<>();
 
+        for (File f: pictures.listFiles()) {
+            //pics.add(pictures.getPath() + "/" + f.getName());
+            pics.add(f.getPath());
+        }
+
+        return pics;
     }
 
 
